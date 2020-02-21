@@ -1,0 +1,207 @@
+
+/*Geral*/
+*{margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; font-size: 18px; 
+font-family: "Helvetica Neue", sans-serif;}
+
+    a{text-decoration: none; font-weight: bold; }
+    .nav a{text-align: center; padding: 10px 0; color: white;}
+    .nav{background: #7ad06d;}
+    .nav a:hover{background: rgb(147, 233, 151);}
+    
+    .address{ text-align: center;}
+    .address img{vertical-align: middle;}
+    .image-gallery{float: left;   }
+
+    
+    .information li{list-style: none; line-height: 35px; padding-left: 45px; background: url("/img/sep.png") no-repeat left center;}
+    .maps{float: left; width: 85%; margin: 100px;}
+    .maps iframe{width: 92%; height: 200px; border: none;}
+    .footer{display: flex; width: 100%; background: #7ad06d; padding: 15px 5%; font-weight: bold; line-height: 35px;}
+    .footer div:nth-child(2){color: #fff;}
+     
+/*media query (@media) para trabalhar com responsividade*/
+
+/*Smartphone*/
+
+@media screen and (max-width: 480px){
+    .header{display:flex; flex-direction: column; margin-bottom: 15px; background: #d6ffd0; }
+    .image-gallery{width: 90%; margin: 0 5%; }
+
+    .nav{ order: 2; display: none; flex-direction: column; }
+        .nav a{width: 100%; }
+
+        .buttonMob{order: 1; text-align: right; padding: 10px 5% 10px 0;}
+
+        .logo{position: absolute; top: 0; left: 5%;}
+
+    .address{order: 3;  padding: 10px 5% ; line-height: 30px; color: #fff ; background: #3b7c3b;}
+       
+        .address strong{font-size: 28px;}
+     .information{float: left; width: 90%; margin: 20px 5%;}
+     .footer{flex-direction: column; text-align: center; }
+        .footer div:nth-child(2){color: #fff;}
+        
+        .informationText { 
+            float: left;
+            padding-left: 50px;
+            width: 85%;
+            height: 400px;
+            border-radius: 25px;
+            margin: 0 5%;
+            font-size: 30px; 
+            line-height: 25px; 
+            color:#6e8a69 ;}
+        
+    }
+    /*Grande SmartphonesTablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .header{display:flex; flex-direction: column; margin-bottom: 20px; background: #d6ffd0;}
+    .image-gallery{float: left; width: 100%; height: 450px; } /*Administrar galeria*/
+    .nav{ display: none; flex-direction: column; order: 2;}
+        .nav a{width: 100%; }
+    
+    .buttonMob{order: 1; text-align: right; padding: 20px 5% 5px 0;}
+
+    .logo{position: absolute; top: 0; left: 5%;}    
+
+    .address{order: 3;  padding: 10px 5% ; line-height: 30px; color: #fff ; background: #3b7c3b;}
+        
+        .address strong{font-size: 28px;}
+
+    .information{float: left; width: 80%; margin: 20px 10%;}
+
+    .footer div:nth-child(1){flex-grow: 1; text-align: center;}
+    .footer div:nth-child(2){flex-grow: 5; }
+    
+    .informationText {float: left; padding-left: 20px; width: 80%; height:600px; margin: 0 8%;}
+    .informationText h1{font-size: 30px;  text-align: center; padding: 10px; line-height: 40px; color:#6e8a69 ;}
+    .informationText ul{line-height: 40px; color:#6e8a69 ; }
+
+
+        .formulario{display: flex; width: 50%; margin: 20px 25%; flex-direction: column;}
+        .formulario h1{color: #7ad06d; text-align: center; font-size: 30px;}
+        .formulario input{margin: 6px 0; height: 40px;color: #333;}
+        .formulario input[type='text'],
+        .formulario input[type='tel'],
+        .formulario input[type='email']{
+            width: 100%; padding: 0 5px; }
+            .formulario input[type='submit']{
+                background: #7ad06d;
+                cursor: pointer;
+                color: #fff;
+                font-weight: bold;
+                border-radius: 5px;
+                width: 30%;}
+                .formulario textarea{
+                    width: 100%;
+                    height: 150px;
+                    color: #333;
+                    padding: 5px;
+                }
+
+                .vantagens{display: flex; width: 100% ; flex-direction: row; justify-content: space-around ; flex-wrap: wrap; }
+                            .vantagensItem{width: 30%; margin: 50px 0; box-shadow: 0 5px 20px #999;text-align: center; padding: 15px; }
+
+       
+}
+/*Pequenos computadores e Tablests*/
+@media screen and (min-width: 769px) and (max-width: 1199px){
+        .header{float: left; width: 100%; box-shadow: 0 2px 10px #999999; margin-bottom: 25px; background: #d6ffd0;  }
+        .image-gallery{float: left; width: 90%; margin: 0 4%; height: 550px; padding: 30px;} /*Administrar galeria*/
+        .nav{ display: flex;}
+        .nav a{width: 25%; }
+        .buttonMob{display: none;}
+
+        .logo{float: left; width: 30%; padding: 30px 0 30px 10%;}
+
+        .address{float: left; width: 70%; padding: 20px 5% 10px 20% ; line-height: 35px ;}
+        
+        .address strong{color: #7ad06d; font-size: 28px;}
+
+    .information{float: left; width: 200%; margin: 20px 5%;}
+      .footer div:nth-child(1){flex-grow: 1; text-align: center;}
+    .footer div:nth-child(2){flex-grow: 5; }
+    
+    .informationText {float: left; padding-left: 20px; width: 80%; height:600px; margin: 0 8%;}
+    .informationText h1{font-size: 30px;  text-align: center; padding: 10px; line-height: 40px; color:#6e8a69 ;}
+    .informationText ul{line-height: 40px; color:#6e8a69 ; }
+
+        
+        .formulario{display: flex; width: 50%; margin: 20px 25%; flex-direction: column;}
+        .formulario h1{color: #7ad06d; text-align: center; font-size: 30px;}
+        .formulario input{margin: 6px 0; height: 40px;color: #333;}
+        .formulario input[type='text'],
+        .formulario input[type='tel'],
+        .formulario input[type='email']{
+            width: 100%; padding: 0 5px; }
+            .formulario input[type='submit']{
+                background: #7ad06d;
+                cursor: pointer;
+                color: #fff;
+                font-weight: bold;
+                border-radius: 5px;
+                width: 30%;}
+                .formulario textarea{
+                    width: 100%;
+                    height: 150px;
+                    color: #333;
+                    padding: 5px;
+                }
+
+                .vantagens{display: flex; width: 100% ; flex-direction: row; justify-content: space-around ; flex-wrap: wrap; }
+                            .vantagensItem{width: 30%; margin: 50px 0; box-shadow: 0 5px 20px #999;text-align: center; padding: 15px; }
+
+                
+
+       
+}
+/*Grandes computadores*/
+@media screen and (min-width: 1200px){
+        .header{float: left; width: 100%; box-shadow: 0 2px 10px #999999; margin-bottom: 25px; background: #d6ffd0;  }
+        .image-gallery{width: 100%;  height: 550px;  } /*Administrar galeria*/
+        .nav{ display: flex;}
+        .nav a{width: 25%; }
+        .buttonMob{display: none;}
+
+        .logo{float: left; width: 30%; padding: 15px 0 15px 10%;}
+
+        .address{float: left; width: 70%; padding: 20px 5% 10px 20% ; line-height: 35px ;}
+        
+        .address strong{color: #7ad06d; font-size: 28px;}
+
+        .information{float: left; width: 100%; text-align: center;}
+            
+        .maps iframe{height: 400px; margin: 30px; }
+        .maps h1{font-size: 30px;  text-align: center; color:#6e8a69 ;}
+        
+            .footer div:nth-child(1){flex-grow: 1; text-align: center;}
+            .footer div:nth-child(2){flex-grow: 5; }
+
+        .formulario{display: flex; width: 50%; margin: 20px 25%; flex-direction: column;}
+            .formulario h1{color: #7ad06d; text-align: center; font-size: 30px;}
+            .formulario input{margin: 6px 0; height: 40px;color: #333;}
+            .formulario input[type='text'],
+            .formulario input[type='tel'],
+            .formulario input[type='email']{
+                width: 100%; padding: 0 5px; }
+                .formulario input[type='submit']{
+                    background: #7ad06d;
+                    cursor: pointer;
+                    color: #fff;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    width: 30%;}
+                    .formulario textarea{
+                        width: 100%;
+                        height: 150px;
+                        color: #333;
+                        padding: 5px;
+                    }
+        
+                    .informationText {float: left; padding-left: 20px; width: 80%; height:600px; margin: 0 8%;}
+                        .informationText h1{font-size: 30px;  text-align: center; padding: 10px; line-height: 40px; color:#6e8a69 ;}
+                        .informationText ul{line-height: 40px; color:#6e8a69 ; }
+
+                        .vantagens{display: flex; width: 100% ; flex-direction: row; justify-content: space-around ; flex-wrap: wrap; }
+                            .vantagensItem{width: 30%; margin: 50px 0; box-shadow: 0 5px 20px #999;text-align: center; padding: 15px; }
+}
